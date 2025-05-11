@@ -1,0 +1,11 @@
+RewriteEngine On  
+
+# Check if the request is not for a file or directory that exists  
+RewriteCond %{REQUEST_FILENAME} !-f  
+RewriteCond %{REQUEST_FILENAME} !-d  
+
+# Set the base path for the application  
+RewriteBase /planning-school/public/  
+
+# Rewrite the URL to index.php  
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]

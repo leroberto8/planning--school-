@@ -1,0 +1,105 @@
+/* ---- Global Styles ---- */  
+body {  
+    font-family: Arial, sans-serif;  
+    background-color: #eef2f7;  
+    margin: 0;  
+    padding: 0;  
+}  
+
+/* ---- Container Principal ---- */  
+.container {  
+    display: flex;  
+    flex-direction: column; /* Stack elements vertically */  
+    align-items: center; /* Center align elements */  
+    min-height: calc(100vh - 120px);  
+    padding: 20px;  
+}  
+
+/* ---- Navbar ---- */  
+.navbar {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    background-color: #28a745; /* Green */  
+    padding: 10px 20px;  
+}  
+
+.logo {  
+    height: 40px;  
+}  
+
+/* ---- Bouton Déconnexion ---- */  
+.btn-deconnexion {  
+    background-color: #007bff; /* Blue */  
+    color: white;  
+    padding: 8px 15px;  
+    border: none;  
+    border-radius: 5px;  
+    text-decoration: none;  
+    transition: background-color 0.3s;  
+}  
+
+.btn-deconnexion:hover {  
+    background-color: #0056b3; /* Darker blue on hover */  
+}  
+
+/* ---- Titre Principal ---- */  
+main h1 {  
+    font-size: 1rem; /* Smaller title size */  
+    text-align: center;  
+    margin-bottom: 20px; /* Increased margin for spacing */  
+}  
+
+/* ---- Table Styles ---- */  
+table.compact-table {  
+    width: 100%;  
+    border-collapse: collapse;  
+    font-size: 0.85rem; /* Smaller font size for the table */  
+    margin-top: 10px;  
+}  
+
+table.compact-table thead {  
+    background-color: #1d3557;  
+    color: white;  
+}  
+
+table.compact-table th,  
+table.compact-table td {  
+    padding: 4px 6px; /* Reduced padding for a more compact look */  
+    text-align: left;  
+    border-bottom: 1px solid #ddd;  
+}  
+
+table.compact-table tr:hover {  
+    background-color: #f9f9f9; /* Keep a subtle hover effect */  
+}  
+
+/* ---- Bouton Tiny ---- */  
+.tiny-btn {  
+    display: block;  
+    font-size: 0.65rem; /* Keep the font size small */  
+    padding: 4px 8px; /* Adjusted padding for size */  
+    background-color: #3498db;  
+    color: white;  
+    border-radius: 3px;  
+    text-decoration: none;  
+    margin: 10px auto; /* Center the button and space it from the table */  
+    transition: background-color 0.2s ease;  
+    width: fit-content;  
+    text-align: center; /* Center the button text */  
+    border: 1px solid transparent; /* Subtle border */  
+}  
+
+.tiny-btn:hover {  
+    background-color: #2980b9;  
+    transform: scale(1.05); /* Slight hover scale effect for interactivity */  
+}  
+
+/* ---- Footer ---- */  
+footer {  
+    background-color: #000;  
+    color: white;  
+    text-align: center;  
+    padding: 15px 0;  
+    margin-top: auto;  
+}
